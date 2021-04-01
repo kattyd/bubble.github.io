@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;600&family=Nixie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    /*background: linear-gradient(to right, rgb(254, 191, 173), rgb(255, 212, 196)) ;*/
+    background-color: rgb(165, 182, 238);
+    background-repeat: no-repeat;
+    font-family: 'Martel Sans', sans-serif;
+   /* display: flex;
+    align-items: center;
+    justify-content: center;*/
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; 
+}
+nav{
+    width: 80%;
+    position: sticky;
+    margin: 5px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.main a{
+    text-decoration: none;
+}
+.main nav h1{
+    position: static;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li, .nav-links ul li p{
+    list-style: none;
+    display: inline;
+    margin: 0 10px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-links ul li a:hover{
+    color: rgb(247, 121, 121);
+}
+.nav-links ul li button{
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    width: 90px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    position: relative;
+    font-weight: 600;
+}
+.nav-links ul li button:hover{
+    background-color: white;
+    color: rgb(247, 121, 121);
+}
+.nav-links ul li button .acct-drop{
+    background-color: white;
+    display: flex;
+    color: black;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    width: 180%;
+    right: 0;
+    left: 15%;
+    opacity: 0;
+    border: white solid 0.75px;
+    pointer-events: none;
+    padding: 20px 10px;
+    border-radius: 5px;
+    align-items: center;
+    transition: all .5s ease;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.nav-links ul li button:focus .acct-drop{
+    opacity: 1;
+    pointer-events: all;
+}
+.nav-links ul li button .acct-drop a{
+    text-decoration: none;
+    border-radius: 5px;
+}
+.nav-links ul li button .acct-drop p{
+    font-size: 0.9rem;
+}
+.nav-links ul li button .acct-drop a:nth-child(1){
+    color: black
+}
+.nav-links ul li button .acct-drop a:nth-child(1):hover{
+    color: rgb(247, 121, 121);
+}
+.nav-links ul li button .acct-drop button1:hover{
+    background-color: rgb(224, 148, 148)
+}
+.nav-links ul li button .acct-drop button1{
+    width: 100%;
+    background-color: rgb(247, 121, 121);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+}
+h1{
+    color: white;
+    font-size: 80px;
+    font: small-caps;
+    font-family: monospace;
+}
+h1:hover{
+    color: rgb(247, 121, 121);
+}
+.pic img{
+    height: 550px;
+    width: 600px;
+    position: absolute;
+    left: 53%;
+    bottom: 9%;
+}
+.pic img:hover{
+    transform: translateX(270deg);
+}
+hr{
+    background-color: rgb(247, 121, 121);
+    height: 5px;
+    width: 60px;
+    outline: none;
+    border: none;
+    position: absolute;
+    left: 10.5%;
+    top: 26%;
+    border-radius: 3px;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(250, 239, 239);
+    top: 93%;
+    left: 0%;
+}
+.container1{
+    height: 100px;
+    width: 900px;
+    background-color: white;
+    position: absolute;
+    top: 85%;
+    left: 16%;
+    align-items: center;
+    border-radius: 9px;
+}
+.container1 strong{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    top: 38%;
+    left: 5%;
+}
+.container1 .img1 img{
+    width: 120px;
+    height: 60px;
+    position: absolute;
+    left: 26%;
+    bottom: 10%;
+}
+.container1 .img2 img{
+    width: 150px;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    top: -7%;
+}
+.container1 .img3 img{
+    width: 120px;
+    height: 60px;
+    position: absolute;
+    left: 80%;
+    bottom: 10%;
+}
+.container2{
+    width: 400px;
+    position: absolute;
+    color: white;
+    top: 30%;
+    left: 10%;
+}
+.container2 h2{
+    font-size: 50px;
+}
+.container2 h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container3 button{
+    position: absolute;
+    background-color: white;
+    width: 140px;
+    height: 60px;
+    top: 59%;
+    left: 9%;
+    border-radius: 24px;
+    border: none;
+}
+.container3 button a{
+    text-decoration: none;
+    color: black;
+}
+.container3 button p{
+    position: relative;
+    left: 10px;
+    font-weight: 600;
+}
+.container3 button strong{
+    font-weight: 1000;
+    position: relative;
+    left: 3px;
+}
+.container3 button img{
+    width: 20px;
+    height: 26px;
+    position: absolute;
+    right: 77%;
+    top: 27%;
+}
+.container3 button:hover{
+    background-color: rgb(230, 227, 227);
+}
+.container4 button{
+    position: absolute;
+    background-color: white;
+    width: 140px;
+    height: 60px;
+    top: 59%;
+    left: 20%;
+    border-radius: 24px;
+    border: none;
+}
+.container4 button a{
+    text-decoration: none;
+    color: black;
+}
+.container4 button img{
+    width: 20px;
+    height: 26px;
+    position: absolute;
+    right: 75%;
+    top: 27%;
+}
+.container4 button p{
+    position: relative;
+    font-weight: 600;
+}
+.container4 button strong{
+    font-weight: 1000;
+    position: relative;
+    left: 13px;
+}
+.container4 button:hover{
+    background-color: rgb(230, 227, 227);
+}
+.container5 img{
+    transform: rotate(390deg);
+    width: 150px;
+    position: relative;
+    left: 65%;
+    top: 16%;
+}
+.pic1{
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    display: inline-block;
+    top: 20%;
+    left: 10%;
+    box-shadow: grey 5px 5px 5px;
+}
+.pic2{
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    display: inline-block;
+    top: 20%;
+    left: 40%;
+    box-shadow: grey 5px 5px 5px;
+}
+.container h2{
+    font-size: 50px;
+    position: relative;
+    display: block;
+    top: 25%;
+    left: 18%;
+    font-family: monospace;
+}
+.container h2:hover{
+    color: rgb(247, 121, 121);
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(247, 121, 121);
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+.modal-content h2{
+    font-family: monospace;
+    font-size: 2rem;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+.close-button:hover {
+    background-color: palevioletred;
+}
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.input-data{
+    width: 100%;
+    height: 100%;
+}
+.input-data .input-btn{
+    width: 100%;
+    height: 40px;
+    margin-bottom:10px ;
+    padding-left:7px ;
+    outline: none;
+    border: 1px solid rgb(146, 144, 144);
+    border-radius: 8px;
+}
+.input-data textarea{
+    height: 90px;
+    width: 100%;
+    outline: none;
+    resize: none;
+    padding-left: 7px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.input-data .sub{
+    width: 100%;
+    border-radius: 13px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .5s ease; 
+}
+.input-data .sub:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+a{
+    text-decoration: none;
+}

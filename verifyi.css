@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;600&family=Nixie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    /*background: linear-gradient(to right, rgb(254, 191, 173), rgb(255, 212, 196)) ;*/
+    background-color: rgb(254, 191, 173);
+    background-repeat: no-repeat;
+    font-family: 'Martel Sans', sans-serif;
+   /* display: flex;
+    align-items: center;
+    justify-content: center;*/
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; 
+}
+nav{
+    width: 80%;
+    position: sticky;
+    margin: 10px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    font-family: 'Nanum Gothic', sans-serif;;
+}
+.main a{
+    text-decoration: none;
+}
+.main nav h1{
+    position: static;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline;
+    margin: 0 10px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-links ul li a:hover{
+    color: rgb(247, 121, 121);
+}
+.main nav h1{
+    color: white;
+    font-size: 80px;
+    font: small-caps;
+    font-family: monospace;
+}
+.main nav h1:hover{
+    color: rgb(247, 121, 121);
+}
+.container{
+    background-color: white;
+    width: 400px;
+    height: 350px;
+    border-radius: 10px;
+    position: absolute;
+    top: 18%;
+    left: 60%;
+    box-shadow: rgb(212, 87, 87) 3px 5px 10px;;
+}
+.pic img{
+    height: 550px;
+    width: 680px;
+    position: relative;
+    left: 5%;
+}
+.container1{
+    position: relative;
+    top: 14%;
+    left: 13%;
+    width: 300px;
+}
+.container1 h1{
+    font-size: 2rem;
+    font-size: 40px;
+    color: rgb(247, 121, 121);
+    font-family: monospace;
+}
+.container1 .input-data{
+    color: gray;
+    font-weight: 400;
+    font-size: 0.8rem;
+    padding-bottom: 1.5rem;
+}
+.input-data{
+    width: 100%;
+    height: 100%;
+}
+.input-data .input-btn{
+    width: 100%;
+    height: 40px;
+    margin-bottom:10px ;
+    padding-left:7px ;
+    outline: none;
+    border: 1px solid rgb(146, 144, 144);
+    border-radius: 8px;
+}
+.input-data textarea{
+    height: 90px;
+    width: 100%;
+    outline: none;
+    resize: none;
+    padding-left: 7px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.input-data .sub{
+    width: 100%;
+    border-radius: 13px;
+    padding: 10px;
+    background-color: rgb(247, 121, 121);
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .5s ease; 
+}
+.input-data .sub:hover{
+    background-color: rgb(230, 182, 182);
+    color: black;
+}

@@ -1,0 +1,52 @@
+<DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+            <title>Sign up</title>
+        <link rel="stylesheet" href="css/yige.css">
+            </head>
+            <body>
+                <div class="main">
+                    <nav>
+                        <a href="index.html"><h1>bubble</h1></a>
+                        <div class="nav-links">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="sping.html">Service</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="pic">
+                        <img src="img/art-hero-flowers.png" />
+                    </div>
+                    <div class="container">
+                        <div class="container1">
+                        <h1>Sign Up</h1>
+                        <br>
+            <div class="input-data">
+                <input type="text" class="input-btn" placeholder="name" required>
+                <input type="email" class="input-btn" placeholder="email" required>
+                <input type="tel" class="input-btn" id="phone" name="phone" pattern="[0-9]" placeholder="number" required>
+                <input type="password" class="input-btn" id="myInput" placeholder="password" required> 
+                <input type="checkbox" onclick="myFunction()">Show password
+                <a href="verify.html"><input class="sub" type="submit"></a>
+            </div>
+                    </div>
+                </div>
+                <script>
+                    function myFunction(){
+                        var x =
+                        document.getElementById("myInput");
+                        if (x.type === "password")
+                        {
+                            x.type = "text";
+                        } else {
+                            x.type = "password";
+                        }
+                    }
+                </script>
+            </body>
+    </html>

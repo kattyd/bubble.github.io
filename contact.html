@@ -1,0 +1,84 @@
+<DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+            <title>Service</title>
+        <link rel="stylesheet" href="css/concss.css">
+            </head>
+            <body>
+                <div class="main">
+                    <nav>
+                        <a href="index.html"><h1>bubble</h1></a>
+                        <div class="nav-links">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="sping.html">Service</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><button>Account
+                                    <div class="acct-drop">
+                                    <p>Sign in to access exclusive member deals</p>
+                                    <button1 href="#" class="trigger">Login</button1>
+                                    <div class="modal">
+                                        <div class="modal-content">
+                                          <span class="close-button">&times;</span>
+                                          <h2>Login</h2>
+                                          <div class="input-data">
+                                            <input type="email" class="input-btn" placeholder="email">
+                                            <input type="password" class="input-btn" id="myInput" placeholder="password">
+                                            <input type="checkbox" onclick="myFunction()">Show password
+                                            <a href="profile.html"><input class="sub" type="submit" value="login"></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div></button></li>
+                                <li><a href="log.html">Sign up</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <h1>Got A Message?</h1>
+                    <img src="img/pexels-jake-ryan-4358432.jpg" />
+                    <div class="container">
+                        <div class="input-data">
+                            <input type="text" class="input-btn" placeholder="name">
+                            <input type="email" class="input-btn" placeholder="email" required>
+                            <input type="text" class="input-btn" placeholder="number">
+                            <textarea name="" id=""cols="30" rows="10" placeholder="type message here..." required></textarea>
+                            <a href="thanks.html"><input class="sub" type="submit"></a>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    var modal = document.querySelector(".modal");
+                    var trigger = document.querySelector(".trigger");
+                    var closeButton = document.querySelector(".close-button");
+                
+                    function toggleModal() {
+                        modal.classList.toggle("show-modal");
+                    }
+                
+                    function windowOnClick(event) {
+                        if (event.target === modal) {
+                            toggleModal();
+                        }
+                    }
+                
+                    trigger.addEventListener("click", toggleModal);
+                    closeButton.addEventListener("click", toggleModal);
+                    window.addEventListener("click", windowOnClick);
+      
+      
+                    function myFunction(){
+                              var x =
+                              document.getElementById("myInput");
+                              if (x.type === "password")
+                              {
+                                  x.type = "text";
+                              } else {
+                                  x.type = "password";
+                              }
+                          }
+                        </script>
+                </body>
+    </html>

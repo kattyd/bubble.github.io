@@ -1,0 +1,104 @@
+<DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+            <title>Service</title>
+        <link rel="stylesheet" href="css/abcss.css">
+            </head>
+            <body>
+                <div class="main">
+                    <nav>
+                        <a href="index.html"><h1>bubble</h1></a>
+                        <div class="nav-links">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="sping.html">Service</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><button>Account
+                                    <div class="acct-drop">
+                                    <p>Sign in to access exclusive member deals</p>
+                                    <button1 href="#" class="trigger">Login</button1>
+                                    <div class="modal">
+                                        <div class="modal-content">
+                                          <span class="close-button">&times;</span>
+                                          <h2>Login</h2>
+                                          <div class="input-data">
+                                            <input type="email" class="input-btn" placeholder="email">
+                                            <input type="password" class="input-btn" id="myInput" placeholder="password">
+                                            <input type="checkbox" onclick="myFunction()">Show password
+                                            <a href="profile.html"><input class="sub" type="submit" value="login"></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div></button></li>
+                                <li><a href="log.html">Sign up</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <h2>About</h2>
+                    <hr>
+                    <div class="container">
+                        <div class="text">
+                            <h1>who we are</h1></br>
+                        <p>
+                            My point is you must be a dramatist, a theatrical storyteller, first
+and foremost. The structural concerns of the ideal three act movie
+structure or perfectly timed “inciting incident” must be entirely
+secondary to your passionate desire to tell the story honestly. Be
+an artist first, then a technician.
+My dear friend Laura Schellhardt, the author of the book you are
+holding, offers some valuable advice on ways to approach writing a
+movie. She presents any number of provocative and clever ways to
+understand the screenwriting process. Used wisely, this book can
+help you hew your way through the very dark forest of screenplay
+construction.
+I leave a final bit of advice from my frequent colleague, director
+Ridley Scott. After I delivered a particularly mammoth draft of
+Gladiator, Ridley turned to me with a wry smile and said, “John,
+write less words.”
+So, I guess that covers it. Read lots of words, and write less of them.
+—John Logan
+John Logan’s film works includes Gladiator, Any Given Sunday,
+Star Trek: Nemesis, The Time Machine, RKO 281, and The Last
+Samurai
+                        </p>
+                    </div>
+                    <div class="pic1"><img src="img/pexels-ogo-1661487.jpg" /></div>
+                    <div class="pic2"><img src="img/pexels-wendy-wei-2647753.jpg" /></div>
+                    </div>
+                </div>
+                <script>
+                    var modal = document.querySelector(".modal");
+                    var trigger = document.querySelector(".trigger");
+                    var closeButton = document.querySelector(".close-button");
+                
+                    function toggleModal() {
+                        modal.classList.toggle("show-modal");
+                    }
+                
+                    function windowOnClick(event) {
+                        if (event.target === modal) {
+                            toggleModal();
+                        }
+                    }
+                
+                    trigger.addEventListener("click", toggleModal);
+                    closeButton.addEventListener("click", toggleModal);
+                    window.addEventListener("click", windowOnClick);
+      
+      
+                    function myFunction(){
+                              var x =
+                              document.getElementById("myInput");
+                              if (x.type === "password")
+                              {
+                                  x.type = "text";
+                              } else {
+                                  x.type = "password";
+                              }
+                          }
+                        </script>
+                </body>
+    </html>
